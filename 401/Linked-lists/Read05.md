@@ -11,9 +11,9 @@ Create a print method that prints all the values in the LinkedList to console.
 
 ## Approach & Efficiency
 For each method I took the approach that was most efficient:
-.insert(value) - Big O space of n (linear) and time of O(1) (constant).
-.includes(value) - Big O space and time of n (linear).
-.print() - Big O space and time of n (linear).
+- insert(value) - Big O space of n (linear) and time of O(1) (constant).
+- includes(value) - Big O space and time of n (linear).
+- print() - Big O space and time of n (linear).
 
 ## API
 * .insert(value) - adds a new node with the value to the head of the list.
