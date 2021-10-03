@@ -41,8 +41,44 @@ public class LinkedList {
         return false;
     }
 
+    public void insertAfter(String newData, String currentData) {
+        LinkedListNode newNode = new LinkedListNode(newData);
 
-public void printList(){
+        LinkedListNode current = head;
+
+        while (current != null) {
+            if (current.getData().equals(currentData)) {
+                newNode.setNext(current.getNext());
+                current.setNext(newNode);
+                break;
+            } else {
+                current = current.getNext();
+            }
+        }
+    }
+
+    public void insertBefore(String reference, String data)
+    {
+        LinkedListNode current = head;
+        LinkedListNode prev = current;
+
+        while( current != null )
+        {
+            if( current.getData().equals(reference) )
+            {
+                LinkedListNode n = new LinkedListNode(data);
+                n.setNext (current);
+                prev.setNext(n);
+                break;
+            }
+            prev = current;
+            current = current.getNext();
+        }
+    }
+
+
+
+    public void printList(){
         if (head == null){
             System.out.print("list is []");
         }else {

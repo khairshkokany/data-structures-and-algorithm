@@ -36,4 +36,33 @@ class LibraryTest {
 
     }
 
+    @Test
+    public void returnAfter() {
+        LinkedList classUnderTest = new LinkedList();
+        classUnderTest.add("K");
+        classUnderTest.add("H");
+        classUnderTest.add("A");
+        classUnderTest.add("I");
+        classUnderTest.add("R");
+        classUnderTest.insertAfter("C","R");
+        assertEquals("Head  ->{K} -> {H}   -> {A}   -> {I} -> {C}  -> {R}   -> null -> ", classUnderTest.toString(),"");
+    }
+
+    @Test
+    public void returnBefore() {
+        LinkedList classUnderTest = new LinkedList();
+        classUnderTest.add("K");
+        classUnderTest.add("H");
+        classUnderTest.add("A");
+        classUnderTest.add("I");
+        classUnderTest.add("R");
+        classUnderTest.insertAfter("C","R");
+        assertEquals("Head  ->{K} -> {H}   -> {A}   -> {I}   -> {R} -> {C}   -> null -> ", classUnderTest.toString(),"");
+    }
+
+
+
 }
+
+
+

@@ -14,7 +14,14 @@ public class Main {
         linkedList.add("I");
         linkedList.add("R");
 
-        System.out.println(linkedList.included("R"));
+
+        linkedList.insertBefore("H","Hello");
+        linkedList.insertAfter("khair","A");
+
+
+
+
+//        System.out.println(linkedList.included("R"));
         linkedList.printList();
 
     }
