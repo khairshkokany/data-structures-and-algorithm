@@ -59,6 +59,19 @@ class LibraryTest {
         classUnderTest.insertAfter("C","R");
         assertEquals("Head  ->{K} -> {H}   -> {A}   -> {I}   -> {R} -> {C}   -> null -> ", classUnderTest.toString(),"");
     }
+    @Test
+
+    public void returnNodeFromTheLast() {
+        LinkedList list = new LinkedList();
+        list.add("K");
+        list.add("H");
+        list.add("A");
+        list.add("I");
+        list.add("R");
+
+
+        assertEquals("I", list.insertNthFromEnd(1).getData());
+    }
 
 
 

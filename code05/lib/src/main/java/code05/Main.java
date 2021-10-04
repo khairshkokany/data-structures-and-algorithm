@@ -17,6 +17,7 @@ public class Main {
 
         linkedList.insertBefore("H","Hello");
         linkedList.insertAfter("khair","A");
+        linkedList.insertNthFromEnd(0);
 
 
 
