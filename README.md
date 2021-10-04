@@ -7,5 +7,5 @@
 |Array binary search     |[Code Challenge 03](401/array-binary-search/Read03.md)     |
 |LinkedList              |[Code Challenge 05](401/Linked-lists/Read05.md)            |
 |LinkedList insertions   |[Code Challenge 06](401/linked-list-insertions/Read06.md)  |
-|LinkedList insertions   |[Code Challenge 07](401/linked-list-kth/Read07.md)  |
+|LinkedList kth   |[Code Challenge 07](401/linked-list-kth/Read07.md)  |
 
