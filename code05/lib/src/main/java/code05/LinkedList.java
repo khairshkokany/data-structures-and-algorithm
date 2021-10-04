@@ -75,6 +75,26 @@ public class LinkedList {
             current = current.getNext();
         }
     }
+    public LinkedListNode insertNthFromEnd(int value)
+    {
+        int lengthOfList = 0;
+        LinkedListNode searchNode = head;
+        while (searchNode.getNext() != null)
+        {
+            searchNode = searchNode.getNext();
+            lengthOfList++;
+        }
+        if (lengthOfList < value) {
+            System.out.println("list is empty");;
+        }
+        searchNode = head;
+        for (int i = 1; i < lengthOfList - value + 1; i++) {
+            searchNode = searchNode.getNext();
+        }
+        System.out.println(value+"th node from the end is "+searchNode.getData());
+
+        return searchNode;
+    }
 
 
 
