@@ -39,7 +39,7 @@ public class Main {
         linkedList.printList();
         System.out.println();
         System.out.println("+++++++++++++++++++++++++++++++++ zip method ++++++++++++++++");
-        System.out.println(linkedList3.zipLists(linkedList,linkedList1).toString());
+        System.out.println(linkedList3.zipLists(linkedList,linkedList1));
 //        linkedList3.zipLists(linkedList,linkedList1);
 
 
