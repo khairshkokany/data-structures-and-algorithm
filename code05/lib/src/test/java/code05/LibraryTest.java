@@ -73,7 +73,26 @@ class LibraryTest {
         assertEquals("I", list.insertNthFromEnd(1).getData());
     }
 
+    @Test public void zipTest() {
+        LinkedList linkedList = new LinkedList();
+        LinkedList linkedList1 = new LinkedList();
+        LinkedList linkedList2 = new LinkedList();
 
+        linkedList.add("K");
+        linkedList.add("H");
+        linkedList.add("A");
+        linkedList.add("I");
+        linkedList.add("R");
+
+        linkedList1.add("K");
+        linkedList1.add("H");
+        linkedList1.add("A");
+        linkedList1.add("I");
+        linkedList1.add("R");
+        String test = linkedList2.zipLists(linkedList,linkedList1).toString();;
+        assertEquals(test,linkedList2.zipLists(linkedList,linkedList1).toString());
+
+    }
 
 }
 

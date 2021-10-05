@@ -5,9 +5,10 @@ import java.io.IOException;
 public class LinkedList {
 
     private LinkedListNode head;
+    private int length;
 //    private int size;
 
-    public LinkedList() {
+    public LinkedList()  {
     }
 
     public void add(String data) {
@@ -96,6 +97,31 @@ public class LinkedList {
         return searchNode;
     }
 
+    public  String zipLists(LinkedList linkedList , LinkedList linkedList1){
+
+        LinkedListNode list1Node = linkedList.head;
+        LinkedListNode list2Node = linkedList1.head;
+        System.out.println(list2Node);
+        LinkedList mergedList = new LinkedList();
+        int lenthSizeBig = linkedList.length + linkedList1.length;
+
+        while (lenthSizeBig > 0) {
+            if (list1Node != null){
+                mergedList.add(list1Node.getData());
+                list1Node = list1Node.getNext();
+            }
+            if (list2Node != null){
+                mergedList.add(list2Node.getData());
+                list2Node = list2Node.getNext();
+            }
+            lenthSizeBig--;
+        }
+        return mergedList.toString();
+    }
+
+
+
+
 
 
     public void printList(){
@@ -112,6 +138,24 @@ public class LinkedList {
 
         }
 }
+    public String dataToString() {
+        String linkedList = " Head -> ";
+        LinkedListNode node = head;
+        while (node != null) {
+            linkedList += node.getData() + " ->  ";
+            node = node.getNext();
+        }
+
+
+        return linkedList + "Null";
+
+
+    }
+
+    @Override
+    public String toString() {
+        return dataToString();
+    }
 
     public boolean someLibraryMethod() {
         return true;
