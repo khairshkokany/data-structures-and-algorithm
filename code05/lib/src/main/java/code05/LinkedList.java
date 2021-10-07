@@ -6,7 +6,7 @@ public class LinkedList {
 
     private LinkedListNode head;
     private int length;
-//    private int size;
+    private int size;
 
     public LinkedList()  {
     }
@@ -117,6 +117,22 @@ public class LinkedList {
             lenthSizeBig--;
         }
         return mergedList.toString();
+    }
+
+    public LinkedList reverse(LinkedList linkedList2)
+    {
+
+        LinkedListNode prev = null;
+        LinkedListNode current = head;
+        LinkedListNode next = null;
+        while (current != null) {
+            next = current.getNext();
+            current.setNext(prev);
+            prev = current;
+            current = next;
+        }
+        head = prev;
+        return linkedList2;
     }
 
 

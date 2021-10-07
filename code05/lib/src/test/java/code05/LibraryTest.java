@@ -3,13 +3,17 @@
  */
 package code05;
 
+import Queue.Queue;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.util.Stack;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
+    Stack stack = new Stack();
+    Queue queue = new Queue();
     @Test void someLibraryMethodReturnsTrue() {
         LinkedList classUnderTest = new LinkedList();
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
@@ -92,6 +96,105 @@ class LibraryTest {
         String test = linkedList2.zipLists(linkedList,linkedList1).toString();;
         assertEquals(test,linkedList2.zipLists(linkedList,linkedList1).toString());
 
+    }
+    @Test
+    public void stackData(){
+        stack.push("K");
+        stack.push("H");
+        stack.push("A");
+        assertEquals("[K, H, A]" , stack.toString());
+    }
+
+    @Test
+    public void stackPush(){
+        stack.push("K");
+        stack.push("H");
+        stack.push("A");
+        assertFalse(stack.isEmpty());
+    }
+
+    @Test
+    public void stackPop() {
+        stack.push("K");
+        stack.push("H");
+        stack.push("A");
+
+        stack.pop();
+
+        assertEquals("[K, H]" , stack.toString());
+    }
+
+
+    @Test
+    public void stackEmpty() {
+        stack.push("K");
+        stack.push("H");
+        stack.push("A");
+
+        stack.pop();
+        stack.pop();
+        stack.pop();
+        assertTrue(stack.isEmpty());
+
+    }
+
+    @Test
+    public void stackPeek() {
+        stack.push("K");
+        stack.push("H");
+        stack.push("A");
+
+        assertEquals("A",stack.peek());
+    }
+
+    @Test
+    public void queueData(){
+        queue.enqueue("K");
+        queue.enqueue("H");
+        queue.enqueue("A");
+        assertEquals("Queue{front={K}  , rear={A}  }" , queue.toString());
+    }
+
+    @Test
+    public void queuePush(){
+        queue.enqueue("K");
+        queue.enqueue("H");
+        queue.enqueue("A");
+        assertFalse(queue.isEmpty());
+    }
+
+    @Test
+    public void queuePop() {
+        queue.enqueue("K");
+        queue.enqueue("H");
+        queue.enqueue("A");
+
+        queue.dequeue();
+
+        assertEquals("Queue{front={H}  , rear={A}  }" , queue.toString());
+    }
+
+
+    @Test
+    public void queueEmpty() {
+        queue.enqueue("K");
+        queue.enqueue("H");
+        queue.enqueue("A");
+
+        queue.dequeue();
+        queue.dequeue();
+        queue.dequeue();
+        assertTrue(queue.isEmpty());
+
+    }
+
+    @Test
+    public void queuePeek() {
+        queue.enqueue("K");
+        queue.enqueue("H");
+        queue.enqueue("A");
+
+        assertEquals("K",queue.peek());
     }
 
 }
