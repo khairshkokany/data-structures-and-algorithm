@@ -10,5 +10,7 @@
 |LinkedList kth          |[Code Challenge 07](401/linked-list-kth/Read07.md)  |
 |LinkedList zip          |[Code Challenge 08](401/linked-list-zip/Read08.md)  |
 |Stack & Queue           |[Code Challenge 10](401/Stack&Queue/Read10.md)  |
+|Stack & Queue pseudo    |[Code Challenge 11](401/stack-queue-pseudo/Read11.md)  |
+
 
 

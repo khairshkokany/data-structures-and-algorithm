@@ -4,16 +4,21 @@
 package code05;
 
 import Queue.Queue;
+import Queue.Stacks;
+import Queue.PsudoCode;
+
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.util.Stack;
 
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
-    Stack stack = new Stack();
+    Stacks stack = new Stacks();
     Queue queue = new Queue();
+
     @Test void someLibraryMethodReturnsTrue() {
         LinkedList classUnderTest = new LinkedList();
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
@@ -195,6 +200,16 @@ class LibraryTest {
         queue.enqueue("A");
 
         assertEquals("K",queue.peek());
+    }
+
+    @Test
+    public void psudoQueue() {
+        PsudoCode psudoCode = new PsudoCode();
+        psudoCode.enqueue("KHAIR");
+        psudoCode.enqueue("Shkokany");
+
+        assertEquals("KHAIR",psudoCode.deQueue());
+
     }
 
 }
