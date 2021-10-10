@@ -1,4 +1,4 @@
-import Queue.Queue;
+import Queue.PsudoCode;
 
 public class App {
     public static void main(String[] args) {
@@ -47,39 +47,48 @@ public class App {
 
         // ++++++++++++++++++++++QUEUE method +++++++++++++++++
 
-        Queue queue = new Queue();
-        queue.enqueue("K");
-        queue.enqueue("h");
-        queue.enqueue("A");
-        queue.enqueue("i");
-        queue.enqueue("R");
+//        Queue queue = new Queue();
+//        queue.enqueue("K");
+//        queue.enqueue("h");
+//        queue.enqueue("A");
+//        queue.enqueue("i");
+//        queue.enqueue("R");
+//
+//        System.out.println(queue);
+//        System.out.println(queue.dequeue());
+//        System.out.println(queue.dequeue());
+//        System.out.println(queue.dequeue());
+//        System.out.println("the front is =>>>> " + queue.peek());
+//        System.out.println(queue.dequeue());
+//        System.out.println(queue.dequeue());
+//
+//
+//
+//        // +++++++++++++++++++++++ Stack Method ++++++++++++++++++++++
+//Queue.Stacks stack = new Queue.Stacks();
+//        stack.push("K");
+//        stack.push("h");
+//
+//        stack.push("A");
+//        stack.push("i");
+//        stack.push("R");
+//        System.out.println(stack);
+//        System.out.println(stack.pop());
+//        System.out.println(stack.pop());
+//        System.out.println("the top is ==> " + stack.peek());
+//        System.out.println(stack.pop());
+//        System.out.println(stack.pop());
+//        System.out.println(stack.pop());
 
-        System.out.println(queue);
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
-        System.out.println("the front is =>>>> " + queue.peek());
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
+        PsudoCode psudoCode = new PsudoCode();
 
+        psudoCode.enqueue("KHAIR");
+        psudoCode.enqueue("EL-deen");
+        psudoCode.enqueue("Shkokany");
 
-
-        // +++++++++++++++++++++++ Stack Method ++++++++++++++++++++++
-Stacks stack = new Stacks();
-        stack.push("K");
-        stack.push("h");
-
-        stack.push("A");
-        stack.push("i");
-        stack.push("R");
-        System.out.println(stack);
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
-        System.out.println("the top is ==> " + stack.peek());
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
-
+        System.out.println(psudoCode.deQueue());
+        System.out.println(psudoCode.deQueue());
+        System.out.println(psudoCode.deQueue());
     }
     }
 
