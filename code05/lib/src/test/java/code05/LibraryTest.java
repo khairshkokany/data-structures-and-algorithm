@@ -3,6 +3,9 @@
  */
 package code05;
 
+import Animal.AnimalQueue;
+import Animal.Cat;
+import Animal.Dog;
 import Queue.Queue;
 import Queue.Stacks;
 import Queue.PsudoCode;
@@ -210,6 +213,16 @@ class LibraryTest {
 
         assertEquals("KHAIR",psudoCode.deQueue());
 
+    }
+
+    @Test
+    public void animalQueue() throws Exception {
+        AnimalQueue animalQueue = new AnimalQueue();
+        animalQueue.enQueue(new Dog("dog"));
+        animalQueue.enQueue(new Cat("CAT"));
+
+        assertEquals("DOG{firstName='dog'}",animalQueue.dequeue("dog").toString());
+        assertEquals("CAT{firstName='CAT'}",animalQueue.dequeue("cat").toString());
     }
 
 }

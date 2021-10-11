@@ -1,7 +1,13 @@
+import Animal.Animal;
 import Queue.PsudoCode;
+import Animal.Dog;
+import Animal.Cat;
+import Animal.AnimalQueue;
+import org.checkerframework.checker.units.qual.C;
+
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println("hello from package");
 
 
@@ -79,16 +85,32 @@ public class App {
 //        System.out.println(stack.pop());
 //        System.out.println(stack.pop());
 //        System.out.println(stack.pop());
+//
+//        PsudoCode psudoCode = new PsudoCode();
+//
+//        psudoCode.enqueue("KHAIR");
+//        psudoCode.enqueue("EL-deen");
+//        psudoCode.enqueue("Shkokany");
+//
+//        System.out.println(psudoCode.deQueue());
+//        System.out.println(psudoCode.deQueue());
+//        System.out.println(psudoCode.deQueue());
 
-        PsudoCode psudoCode = new PsudoCode();
+   AnimalQueue animalQueue = new AnimalQueue();
 
-        psudoCode.enqueue("KHAIR");
-        psudoCode.enqueue("EL-deen");
-        psudoCode.enqueue("Shkokany");
+   animalQueue.enQueue(new Dog("dog"));
+   animalQueue.enQueue(new Cat("cat"));
+   animalQueue.enQueue(new Dog("DOG"));
+   animalQueue.enQueue(new Dog("DOG"));
 
-        System.out.println(psudoCode.deQueue());
-        System.out.println(psudoCode.deQueue());
-        System.out.println(psudoCode.deQueue());
+
+
+        System.out.println(animalQueue.dequeue("dog"));
+        System.out.println(animalQueue.dequeue("cat"));
+        System.out.println(animalQueue.dequeue("dog"));
+        System.out.println(animalQueue.dequeue("CAT"));
+//        System.out.println(animalQueue.dequeue("dog"));
+
     }
     }
 
