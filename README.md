@@ -12,6 +12,7 @@
 |Stack & Queue           |[Code Challenge 10](401/Stack&Queue/Read10.md)  |
 |Stack & Queue pseudo    |[Code Challenge 11](401/stack-queue-pseudo/Read11.md)  |
 |Stack & Queue-animal-shelter    |[Code Challenge 12](401/stack-queue-animal-shelter/Read12.md)  |
+|Stack & Queue-animal-Brackets    |[Code Challenge 13](401/stack-queue-brackets/Read13.md)  |
 
 
 

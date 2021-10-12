@@ -7,13 +7,13 @@ import Animal.AnimalQueue;
 import Animal.Cat;
 import Animal.Dog;
 import Queue.Queue;
-import Queue.Stacks;
+import Stack.StackBrackets;
+import Stack.Stacks;
 import Queue.PsudoCode;
 
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
-import java.util.Stack;
 
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -21,6 +21,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class LibraryTest {
     Stacks stack = new Stacks();
     Queue queue = new Queue();
+    StackBrackets stackBrackets = new StackBrackets();
 
     @Test void someLibraryMethodReturnsTrue() {
         LinkedList classUnderTest = new LinkedList();
@@ -224,7 +225,12 @@ class LibraryTest {
         assertEquals("DOG{firstName='dog'}",animalQueue.dequeue("dog").toString());
         assertEquals("CAT{firstName='CAT'}",animalQueue.dequeue("cat").toString());
     }
+    @Test
 
+    public void testBracketsValidate() throws Exception {
+        assertFalse(StackBrackets.bracketsMethod("{(})"));
+        assertTrue(StackBrackets.bracketsMethod("{()}"));
+    }
 }
 
 
