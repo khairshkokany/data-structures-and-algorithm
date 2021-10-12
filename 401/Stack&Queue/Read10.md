@@ -25,4 +25,4 @@ For each method I took the approach that was most efficient:
 * .Peek() - return you a data of top stack list.
 
 ## Solution Code :- 
-![code10]()
+[code10](https://github.com/khairshkokany/data-structures-and-algorithm/tree/main/code05/lib/src)
