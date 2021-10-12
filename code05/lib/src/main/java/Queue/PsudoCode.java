@@ -1,5 +1,7 @@
 package Queue;
 
+import Stack.Stacks;
+
 public class PsudoCode {
 
     Stacks stack1 = new Stacks();

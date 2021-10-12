@@ -3,6 +3,7 @@ import Queue.PsudoCode;
 import Animal.Dog;
 import Animal.Cat;
 import Animal.AnimalQueue;
+import Stack.StackBrackets;
 import org.checkerframework.checker.units.qual.C;
 
 
@@ -71,7 +72,7 @@ public class App {
 //
 //
 //        // +++++++++++++++++++++++ Stack Method ++++++++++++++++++++++
-//Queue.Stacks stack = new Queue.Stacks();
+//Stack.Stacks stack = new Stack.Stacks();
 //        stack.push("K");
 //        stack.push("h");
 //
@@ -96,20 +97,25 @@ public class App {
 //        System.out.println(psudoCode.deQueue());
 //        System.out.println(psudoCode.deQueue());
 
-   AnimalQueue animalQueue = new AnimalQueue();
-
-   animalQueue.enQueue(new Dog("dog"));
-   animalQueue.enQueue(new Cat("cat"));
-   animalQueue.enQueue(new Dog("DOG"));
-   animalQueue.enQueue(new Dog("DOG"));
-
-
-
-        System.out.println(animalQueue.dequeue("dog"));
-        System.out.println(animalQueue.dequeue("cat"));
-        System.out.println(animalQueue.dequeue("dog"));
-        System.out.println(animalQueue.dequeue("CAT"));
+//   AnimalQueue animalQueue = new AnimalQueue();
+//
+//   animalQueue.enQueue(new Dog("dog"));
+//   animalQueue.enQueue(new Cat("cat"));
+//   animalQueue.enQueue(new Dog("DOG"));
+//   animalQueue.enQueue(new Dog("DOG"));
+//
+//
+//
 //        System.out.println(animalQueue.dequeue("dog"));
+//        System.out.println(animalQueue.dequeue("cat"));
+//        System.out.println(animalQueue.dequeue("dog"));
+//        System.out.println(animalQueue.dequeue("CAT"));
+//        System.out.println(animalQueue.dequeue("dog"));
+
+        StackBrackets stackBrackets = new StackBrackets();
+
+
+        System.out.println(stackBrackets.bracketsMethod("[(hello)]"));
 
     }
     }
