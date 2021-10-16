@@ -6,6 +6,8 @@ package code05;
 import Animal.AnimalQueue;
 import Animal.Cat;
 import Animal.Dog;
+import BinaryTrees.BinaryTree;
+import BinaryTrees.BinaryTreesNode;
 import Queue.Queue;
 import Stack.StackBrackets;
 import Stack.Stacks;
@@ -22,6 +24,7 @@ class LibraryTest {
     Stacks stack = new Stacks();
     Queue queue = new Queue();
     StackBrackets stackBrackets = new StackBrackets();
+    BinaryTree <Integer> binaryTree = new BinaryTree<>();
 
     @Test void someLibraryMethodReturnsTrue() {
         LinkedList classUnderTest = new LinkedList();
@@ -230,6 +233,28 @@ class LibraryTest {
     public void testBracketsValidate() throws Exception {
         assertFalse(StackBrackets.bracketsMethod("{(})"));
         assertTrue(StackBrackets.bracketsMethod("{()}"));
+    }
+
+    @Test
+    public void testEmptyTree() {
+
+        binaryTree.add(10);
+        assertFalse(binaryTree.isEmpty());
+    }
+    @Test
+    public void testContains() {
+        binaryTree.add(20);
+        assertTrue(binaryTree.contains(20));
+    }
+    @Test
+    public void testAddingRightAndLeft() {
+        BinaryTree <Integer> binaryTree = new BinaryTree<>();
+        binaryTree.add(10);
+        binaryTree.add(20);
+        binaryTree.add(30);
+        binaryTree.add(5);
+        assertEquals(true,binaryTree.contains(5),"adding in left node ");
+        assertEquals(true,binaryTree.contains(30),"adding in right node ");
     }
 }
 
