@@ -1,9 +1,12 @@
 import Animal.Animal;
+import BinaryTrees.BinaryTree;
 import Queue.PsudoCode;
 import Animal.Dog;
 import Animal.Cat;
 import Animal.AnimalQueue;
 import Stack.StackBrackets;
+import Stack.StackGen;
+import Stack.StackMax;
 import org.checkerframework.checker.units.qual.C;
 
 
@@ -112,11 +115,33 @@ public class App {
 //        System.out.println(animalQueue.dequeue("CAT"));
 //        System.out.println(animalQueue.dequeue("dog"));
 
-        StackBrackets stackBrackets = new StackBrackets();
+//        StackBrackets stackBrackets = new StackBrackets();
+//
+//
+//        System.out.println(stackBrackets.bracketsMethod("[(hello)]"));
 
 
-        System.out.println(stackBrackets.bracketsMethod("[(hello)]"));
+//      StackGen stackGen = new StackGen();
+//      stackGen.push(5);
+//      stackGen.push(10);
+//      stackGen.push(12);
+//      stackGen.push(13);
+//      stackGen.push(14);
+//      StackMax stackMax = new StackMax();
+//      stackMax.getMax(stackGen);
 
+            BinaryTree<Integer> binaryTree = new BinaryTree<>();
+
+            binaryTree.add(50);
+            binaryTree.add(60);
+            binaryTree.add(70);
+            binaryTree.add(80);
+            binaryTree.add(90);
+            binaryTree.add(10);
+        System.out.println(binaryTree.contains(60));
+        System.out.println(binaryTree.contains(70));
+        System.out.println(binaryTree.contains(80));
+        System.out.println(binaryTree.contains(20));
     }
     }
 
