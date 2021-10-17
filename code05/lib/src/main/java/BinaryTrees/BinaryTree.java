@@ -47,6 +47,17 @@ public class BinaryTree <T extends Comparable <T>> {
     }
 
     }
+    public int maximumValue() {
+        return maximumValue(root);
+    }
+
+    private int maximumValue(BinaryTreesNode node) {
+        if (node.getRightNode() != null) {
+            return maximumValue(node.getRightNode());
+        }
+        return (int) node.getData();
+
+    }
 
 
 

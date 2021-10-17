@@ -142,6 +142,7 @@ public class App {
         System.out.println(binaryTree.contains(70));
         System.out.println(binaryTree.contains(80));
         System.out.println(binaryTree.contains(20));
+        System.out.println(binaryTree.maximumValue());
     }
     }
 

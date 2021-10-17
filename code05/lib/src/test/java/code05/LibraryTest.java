@@ -256,6 +256,15 @@ class LibraryTest {
         assertEquals(true,binaryTree.contains(5),"adding in left node ");
         assertEquals(true,binaryTree.contains(30),"adding in right node ");
     }
+    @Test
+    public void testMaximumValue() {
+        BinaryTree <Integer> binaryTree = new BinaryTree<>();
+        binaryTree.add(10);
+        binaryTree.add(20);
+        binaryTree.add(30);
+        binaryTree.add(5);
+        assertEquals(30, binaryTree.maximumValue(),"this is the maximum number ");
+    }
 }
 
 
