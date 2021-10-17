@@ -14,6 +14,7 @@
 |Stack & Queue-animal-shelter    |[Code Challenge 12](401/stack-queue-animal-shelter/Read12.md)  |
 |Stack & Queue-animal-Brackets    |[Code Challenge 13](401/stack-queue-brackets/Read13.md)  |
 |Trees   |[Code Challenge 15](401/trees/Read15.md)  |
+|Maximum Trees   |[Code Challenge 16](401/max-trees/Read16.md)  |
 
 
 
