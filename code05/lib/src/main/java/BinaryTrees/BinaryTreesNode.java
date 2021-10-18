@@ -3,8 +3,8 @@ package BinaryTrees;
 public class BinaryTreesNode <T> {
 
     private T data;
-    private BinaryTreesNode<T> leftNode;
-    private BinaryTreesNode<T> rightNode;
+    public BinaryTreesNode<T> leftNode;
+    public BinaryTreesNode<T> rightNode;
 
     public BinaryTreesNode(T data) {
         this.data = data;

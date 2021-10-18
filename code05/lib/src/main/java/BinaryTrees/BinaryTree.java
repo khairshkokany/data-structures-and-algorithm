@@ -2,7 +2,7 @@ package BinaryTrees;
 
 public class BinaryTree <T extends Comparable <T>> {
 
-    private BinaryTreesNode<T> root;
+    public BinaryTreesNode<T> root;
 
     public void add(T data){
         if (isEmpty()){
@@ -58,10 +58,6 @@ public class BinaryTree <T extends Comparable <T>> {
         return (int) node.getData();
 
     }
-
-
-
-
 
     public boolean isEmpty() {
         return root == null;
