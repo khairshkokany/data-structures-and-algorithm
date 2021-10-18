@@ -8,6 +8,7 @@ import Animal.Cat;
 import Animal.Dog;
 import BinaryTrees.BinaryTree;
 import BinaryTrees.BinaryTreesNode;
+import BinaryTrees.TreeBreadthFirst;
 import Queue.Queue;
 import Stack.StackBrackets;
 import Stack.Stacks;
@@ -264,6 +265,23 @@ class LibraryTest {
         binaryTree.add(30);
         binaryTree.add(5);
         assertEquals(30, binaryTree.maximumValue(),"this is the maximum number ");
+    }
+
+    @Test
+    public void testTreeBreadthFirst() {
+        TreeBreadthFirst treeBreadthFirst = new TreeBreadthFirst();
+        treeBreadthFirst.root = new BinaryTreesNode(2);
+
+        treeBreadthFirst.root.leftNode = new BinaryTreesNode(7);
+        treeBreadthFirst.root.rightNode = new BinaryTreesNode(5);
+        treeBreadthFirst.root.leftNode.rightNode = new BinaryTreesNode(6);
+        treeBreadthFirst.root.rightNode.rightNode = new BinaryTreesNode(9);
+        treeBreadthFirst.root.rightNode.rightNode.leftNode = new BinaryTreesNode(4);
+        treeBreadthFirst.root.leftNode.rightNode.rightNode = new BinaryTreesNode(11);
+        treeBreadthFirst.root.leftNode.rightNode.leftNode = new BinaryTreesNode(5);
+
+        assertEquals(4,treeBreadthFirst.height(treeBreadthFirst.root));
+
     }
 }
 
