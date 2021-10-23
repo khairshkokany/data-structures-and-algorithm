@@ -47,6 +47,25 @@ public class BinaryTree <T extends Comparable <T>> {
     }
 
     }
+
+
+    public int sumOdd(BinaryTreesNode<T> node)
+    {
+        int sum = 0;
+        if(node != null)
+        {
+            if(((Integer) node.getData() % 2) != 0)
+                sum += (Integer) node.getData();
+            sum+=sumOdd(node.getLeftNode());
+            sum+=sumOdd(node.getRightNode());
+        }
+        return sum;
+    }
+
+
+
+
+
     public int maximumValue() {
         return maximumValue(root);
     }
@@ -58,6 +77,7 @@ public class BinaryTree <T extends Comparable <T>> {
         return (int) node.getData();
 
     }
+
 
     public boolean isEmpty() {
         return root == null;

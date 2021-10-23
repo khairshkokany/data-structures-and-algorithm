@@ -16,6 +16,7 @@
 |Trees   |[Code Challenge 15](401/trees/Read15.md)  |
 |Maximum Trees   |[Code Challenge 16](401/max-trees/Read16.md)  |
 |Tree Breadth First   |[Code Challenge 17](401/tree-breadth-first/Read17.md)  |
+|Tree Fizz Buzz   |[Code Challenge 18](401/tree-fizz-buzz/Read18.md)  |
 
 
 
