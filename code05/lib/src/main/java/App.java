@@ -1,7 +1,5 @@
 import Animal.Animal;
-import BinaryTrees.BinaryTree;
-import BinaryTrees.BinaryTreesNode;
-import BinaryTrees.TreeBreadthFirst;
+import BinaryTrees.*;
 import Queue.PsudoCode;
 import Animal.Dog;
 import Animal.Cat;
@@ -10,6 +8,9 @@ import Stack.StackBrackets;
 import Stack.StackGen;
 import Stack.StackMax;
 import org.checkerframework.checker.units.qual.C;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 
 public class App {
@@ -132,14 +133,16 @@ public class App {
 //      StackMax stackMax = new StackMax();
 //      stackMax.getMax(stackGen);
 
-
+        BinaryTree<Integer> binaryTree = new BinaryTree<>();
 //
-//            binaryTree.add(50);
-//            binaryTree.add(60);
-//            binaryTree.add(70);
-//            binaryTree.add(80);
-//            binaryTree.add(90);
-//            binaryTree.add(10);
+            binaryTree.add(50);
+            binaryTree.add(60);
+            binaryTree.add(70);
+            binaryTree.add(13);
+            binaryTree.add(17);
+            binaryTree.add(9);
+
+        System.out.println(binaryTree.sumOdd(binaryTree.root));
 //        System.out.println(binaryTree.contains(60));
 //        System.out.println(binaryTree.contains(70));
 //        System.out.println(binaryTree.contains(80));
@@ -147,22 +150,32 @@ public class App {
 //        System.out.println(binaryTree.maximumValue());
 
 
-        TreeBreadthFirst treeBreadthFirst = new TreeBreadthFirst();
-        treeBreadthFirst.root = new BinaryTreesNode(2);
+//        TreeBreadthFirst treeBreadthFirst = new TreeBreadthFirst();
+//        treeBreadthFirst.root = new BinaryTreesNode(2);
+//
+//        treeBreadthFirst.root.leftNode = new BinaryTreesNode(7);
+//        treeBreadthFirst.root.rightNode = new BinaryTreesNode(5);
+//        treeBreadthFirst.root.leftNode.rightNode = new BinaryTreesNode(6);
+//        treeBreadthFirst.root.rightNode.rightNode = new BinaryTreesNode(9);
+//        treeBreadthFirst.root.rightNode.rightNode.leftNode = new BinaryTreesNode(4);
+//        treeBreadthFirst.root.leftNode.rightNode.rightNode = new BinaryTreesNode(11);
+//        treeBreadthFirst.root.leftNode.rightNode.leftNode = new BinaryTreesNode(5);
+//
+//        System.out.println("Level order traversal of binary tree is ");
+//       treeBreadthFirst.printLevelOrder();
+//        System.out.println();
+//        System.out.println(treeBreadthFirst.height(treeBreadthFirst.root));
 
-        treeBreadthFirst.root.leftNode = new BinaryTreesNode(7);
-        treeBreadthFirst.root.rightNode = new BinaryTreesNode(5);
-        treeBreadthFirst.root.leftNode.rightNode = new BinaryTreesNode(6);
-        treeBreadthFirst.root.rightNode.rightNode = new BinaryTreesNode(9);
-        treeBreadthFirst.root.rightNode.rightNode.leftNode = new BinaryTreesNode(4);
-        treeBreadthFirst.root.leftNode.rightNode.rightNode = new BinaryTreesNode(11);
-        treeBreadthFirst.root.leftNode.rightNode.leftNode = new BinaryTreesNode(5);
+        KaryTrees<Integer> karyTree=new KaryTrees<>(3);
+        karyTree.add(5);
+        karyTree.add(12);
+        karyTree.add(10);
+        System.out.println(KaryTrees.fizzBuzzTree(karyTree).root.allChildren.get(0).value);
 
-        System.out.println("Level order traversal of binary tree is ");
-       treeBreadthFirst.printLevelOrder();
-        System.out.println();
-        System.out.println(treeBreadthFirst.height(treeBreadthFirst.root));
+
 
     }
-    }
+
+
+}
 

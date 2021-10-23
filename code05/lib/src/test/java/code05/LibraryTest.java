@@ -8,12 +8,14 @@ import Animal.Cat;
 import Animal.Dog;
 import BinaryTrees.BinaryTree;
 import BinaryTrees.BinaryTreesNode;
+import BinaryTrees.KaryTrees;
 import BinaryTrees.TreeBreadthFirst;
 import Queue.Queue;
 import Stack.StackBrackets;
 import Stack.Stacks;
 import Queue.PsudoCode;
 
+import com.sun.tools.javac.Main;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -283,6 +285,27 @@ class LibraryTest {
         assertEquals(4,treeBreadthFirst.height(treeBreadthFirst.root));
 
     }
+
+    @Test
+    public void testSumValue() {
+        BinaryTree <Integer> binaryTree = new BinaryTree<>();
+        binaryTree.add(10);
+        binaryTree.add(20);
+        binaryTree.add(30);
+        binaryTree.add(5);
+        assertEquals(5, binaryTree.sumOdd(binaryTree.root),"this is the sum number ");
+    }
+
+@Test
+    public void testKvalue() {
+    KaryTrees<Integer> karyTree=new KaryTrees<>(3);
+    karyTree.add(5);
+    karyTree.add(12);
+    karyTree.add(10);
+
+    assertEquals("Fizz" ,KaryTrees.fizzBuzzTree(karyTree).root.allChildren.get(0).value );
+}
+
 }
 
 
