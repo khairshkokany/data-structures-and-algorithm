@@ -21,4 +21,4 @@ For each method I took the approach that was most efficient:
 
 
 ## Solution Code :-
-[code15](../code05/lib/src/main/java/BinaryTrees)
+[code15](https://github.com/khairshkokany/data-structures-and-algorithm/tree/main/code05/lib/src/main/java/BinaryTrees)
