@@ -12,6 +12,5 @@ For each method I took the approach that was most efficient:
 - If the value is divisible by 3 and 5, replace the value with “FizzBuzz” 
 - If the value is not divisible by 3 or 5, simply turn the number into a String.
 
-
 ## Solution Code :-
 ![code18](code18.jpg)
