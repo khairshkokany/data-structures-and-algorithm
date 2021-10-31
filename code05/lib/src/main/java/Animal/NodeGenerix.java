@@ -27,7 +27,4 @@ public class NodeGenerix <T> {
     public void setNext(NodeGenerix<T> next) {
         this.next = next;
     }
-
-
-
 }

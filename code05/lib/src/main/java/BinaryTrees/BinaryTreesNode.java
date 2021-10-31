@@ -33,6 +33,4 @@ public class BinaryTreesNode <T> {
     public void setRightNode(BinaryTreesNode<T> rightNode) {
         this.rightNode = rightNode;
     }
-
-
 }

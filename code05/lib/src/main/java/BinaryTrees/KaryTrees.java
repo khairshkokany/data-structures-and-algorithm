@@ -1,7 +1,9 @@
 package BinaryTrees;
 
 import java.util.LinkedList;
-import java.util.Queue;
+import Queue.Queue;
+
+
 
 public class KaryTrees<T> {
 
