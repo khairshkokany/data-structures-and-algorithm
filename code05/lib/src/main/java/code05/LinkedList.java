@@ -58,7 +58,7 @@ public class LinkedList {
         }
     }
 
-    public void insertBefore(String reference, String data)
+    public void insertBefores(String reference, String data)
     {
         LinkedListNode current = head;
         LinkedListNode prev = current;

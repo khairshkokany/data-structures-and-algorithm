@@ -1,23 +1,24 @@
-import Animal.Animal;
+//import Animal.Animal;
 import BinaryTrees.*;
-import Queue.PsudoCode;
-import Animal.Dog;
-import Animal.Cat;
-import Animal.AnimalQueue;
-import Stack.StackBrackets;
-import Stack.StackGen;
-import Stack.StackMax;
-import org.checkerframework.checker.units.qual.C;
+import InsertionSort.InsertionSort;
+import code05.LinkedList;
+//import Queue.PsudoCode;
+//import Animal.Dog;
+//import Animal.Cat;
+//import Animal.AnimalQueue;
+//import Stack.StackBrackets;
+//import Stack.StackGen;
+//import Stack.StackMax;
+//import org.checkerframework.checker.units.qual.C;
 
-import java.util.LinkedList;
+import java.util.Arrays;
 import java.util.Queue;
 
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("hello from package");
-
-
+//        System.out.println("hello from package");
+//        LinkedList linkedList1 = new LinkedList();
 //    LinkedList linkedList = new LinkedList();
 //    LinkedList linkedList1 = new LinkedList();
 //    LinkedList linkedList2 = new LinkedList();
@@ -35,6 +36,12 @@ public class App {
 //        linkedList1.add("I");
 //        linkedList1.add("R");
 //
+//
+//        System.out.println(linkedList1);
+//        System.out.println();
+//        System.out.println();
+
+//
 //        linkedList2.add("K");
 //        linkedList2.add("H");
 //        linkedList2.add("A");
@@ -44,8 +51,9 @@ public class App {
 
 
 //
-//        linkedList.insertBefore("H","Hello");
-//        linkedList.insertAfter("khair","A");
+//        linkedList1.insertBefores("H","Hello");
+//        System.out.println("hello from khair ");
+//        linkedList1.insertAfter("khair","A");
 //        linkedList.insertNthFromEnd(0);
 //        linkedList.printList();
 //        System.out.println();
@@ -132,17 +140,17 @@ public class App {
 //      stackGen.push(14);
 //      StackMax stackMax = new StackMax();
 //      stackMax.getMax(stackGen);
-
-        BinaryTree<Integer> binaryTree = new BinaryTree<>();
 //
-            binaryTree.add(50);
-            binaryTree.add(60);
-            binaryTree.add(70);
-            binaryTree.add(13);
-            binaryTree.add(17);
-            binaryTree.add(9);
-
-        System.out.println(binaryTree.sumOdd(binaryTree.root));
+//        BinaryTree<Integer> binaryTree = new BinaryTree<>();
+////
+//            binaryTree.add(50);
+//            binaryTree.add(60);
+//            binaryTree.add(70);
+//            binaryTree.add(13);
+//            binaryTree.add(17);
+//            binaryTree.add(9);
+//
+//        System.out.println(binaryTree.sumOdd(binaryTree.root));
 //        System.out.println(binaryTree.contains(60));
 //        System.out.println(binaryTree.contains(70));
 //        System.out.println(binaryTree.contains(80));
@@ -166,12 +174,17 @@ public class App {
 //        System.out.println();
 //        System.out.println(treeBreadthFirst.height(treeBreadthFirst.root));
 
-        KaryTrees<Integer> karyTree=new KaryTrees<>(3);
-        karyTree.add(5);
-        karyTree.add(12);
-        karyTree.add(10);
-        System.out.println(KaryTrees.fizzBuzzTree(karyTree).root.allChildren.get(0).value);
+//        KaryTrees<Integer> karyTree=new KaryTrees<>(3);
+//        karyTree.add(5);
+//        karyTree.add(12);
+//        karyTree.add(10);
+//        System.out.println(KaryTrees.fizzBuzzTree(karyTree).root.allChildren.get(0).value);
 
+        InsertionSort insertionSort = new InsertionSort();
+
+        int[] arr = {8 , 4 , 23 , 42 , 16 , 15 };
+
+        System.out.println(Arrays.toString(insertionSort.insertionSorts(arr)));
 
 
     }
