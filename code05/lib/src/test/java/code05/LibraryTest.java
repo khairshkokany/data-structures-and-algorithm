@@ -9,13 +9,14 @@ import Animal.Cat;
 import Animal.Dog;
 import BinaryTrees.BinaryTree;
 import BinaryTrees.BinaryTreesNode;
-import BinaryTrees.KaryTrees;
+//import BinaryTrees.KaryTrees;
 import BinaryTrees.TreeBreadthFirst;
 import InsertionSort.InsertionSort;
+import InsertionSort.MergeSort;
 import Queue.Queue;
 import Stack.StackBrackets;
 import Stack.Stacks;
-import Queue.PsudoCode;
+//import Queue.PsudoCode;
 
 import com.sun.tools.javac.Main;
 import org.junit.jupiter.api.Test;
@@ -316,7 +317,13 @@ class LibraryTest {
 
     assertEquals("[ 4, 8, 15, 16, 23, 42]", Arrays.toString(insertionSort.insertionSorts(arr)));
 }
+    @Test
+    public void mergeSort() {
+        MergeSort mergeSort = new MergeSort();
+        int[] arr = {8 , 4 , 23 , 42 , 16 , 15 };
 
+        assertEquals("[4, 8, 15, 16, 23, 42]", Arrays.toString(mergeSort.mergeSort(arr)));
+    }
 }
 //
 //
