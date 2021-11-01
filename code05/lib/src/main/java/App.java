@@ -1,7 +1,8 @@
 //import Animal.Animal;
 import BinaryTrees.*;
 import InsertionSort.InsertionSort;
-import code05.LinkedList;
+import InsertionSort.MergeSort;
+
 //import Queue.PsudoCode;
 //import Animal.Dog;
 //import Animal.Cat;
@@ -180,12 +181,15 @@ public class App {
 //        karyTree.add(10);
 //        System.out.println(KaryTrees.fizzBuzzTree(karyTree).root.allChildren.get(0).value);
 
+        MergeSort mergeSort = new MergeSort();
         InsertionSort insertionSort = new InsertionSort();
 
         int[] arr = {8 , 4 , 23 , 42 , 16 , 15 };
 
         System.out.println(Arrays.toString(insertionSort.insertionSorts(arr)));
+         mergeSort.mergeSort(arr);
 
+         System.out.println(Arrays.toString(arr));
 
     }
 
