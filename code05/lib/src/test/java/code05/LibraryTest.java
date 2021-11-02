@@ -13,6 +13,7 @@ import BinaryTrees.BinaryTreesNode;
 import BinaryTrees.TreeBreadthFirst;
 import InsertionSort.InsertionSort;
 import InsertionSort.MergeSort;
+import InsertionSort.QuickSort;
 import Queue.Queue;
 import Stack.StackBrackets;
 import Stack.Stacks;
@@ -324,6 +325,15 @@ class LibraryTest {
 
         assertEquals("[4, 8, 15, 16, 23, 42]", Arrays.toString(mergeSort.mergeSort(arr)));
     }
+    @Test
+    public void quickSort() {
+
+        int[] arr = {8 , 4 , 23 , 42 , 16 , 15 };
+
+        assertEquals("[4, 8, 15, 16, 23, 42]", QuickSort.quickSort(arr, 0, arr.length - 1));
+    }
+
+
 }
 //
 //

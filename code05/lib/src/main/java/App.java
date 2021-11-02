@@ -1,7 +1,7 @@
 //import Animal.Animal;
 import BinaryTrees.*;
-import InsertionSort.InsertionSort;
-import InsertionSort.MergeSort;
+import InsertionSort.QuickSort;
+import code05.LinkedList;
 
 //import Queue.PsudoCode;
 //import Animal.Dog;
@@ -17,7 +17,8 @@ import java.util.Queue;
 
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception
+    {
 //        System.out.println("hello from package");
 //        LinkedList linkedList1 = new LinkedList();
 //    LinkedList linkedList = new LinkedList();
@@ -181,17 +182,54 @@ public class App {
 //        karyTree.add(10);
 //        System.out.println(KaryTrees.fizzBuzzTree(karyTree).root.allChildren.get(0).value);
 
-        MergeSort mergeSort = new MergeSort();
-        InsertionSort insertionSort = new InsertionSort();
+      //  MergeSort mergeSort = new MergeSort();
+       // InsertionSort insertionSort = new InsertionSort();
+
+        QuickSort quickSort = new QuickSort();
 
         int[] arr = {8 , 4 , 23 , 42 , 16 , 15 };
 
-        System.out.println(Arrays.toString(insertionSort.insertionSorts(arr)));
-         mergeSort.mergeSort(arr);
+         QuickSort.quickSort(arr,0,arr.length-1);
+        System.out.println(Arrays.toString(QuickSort.quickSort(arr, 0, arr.length - 1)));
+//        mergeSort.mergeSort(arr);
 
-         System.out.println(Arrays.toString(arr));
+//        System.out.println(Arrays.toString(arr));
+//
+//        LinkedList linkedList = new LinkedList();
+//        LinkedList linkedList1 = new LinkedList();
+//        LinkedList linkedList2 = new LinkedList();
+//
+//        linkedList.add("k");
+//        linkedList.add("h");
+//        linkedList.add("a");
+//        linkedList.add("i");
+//        linkedList.add("r");
+//
+//        linkedList1.add("jamal");
+//        linkedList1.add("eldeeen");
+//        linkedList1.add("wari");
+//        linkedList1.add("heba");
+//        linkedList1.add("nawal");
+//
+//        linkedList.included("k");
+//        linkedList.included("z");
+//        linkedList.insertBefores("a" , "jamal");
+//
+////        System.out.println(linkedList);
+//
+//        linkedList.insertNthFromEnd(2);
+
+//
+//        System.out.println( linkedList2.zipLists(linkedList1 , linkedList));
+//        System.out.println(linkedList2.dataToString());
+//        System.out.println("we are here so you can go !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+//        System.out.println(linkedList1.reverse(linkedList1));
+//        System.out.println(linkedList1);
+
+
 
     }
+
 
 
 }
