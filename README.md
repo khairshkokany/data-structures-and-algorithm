@@ -19,6 +19,8 @@
 |Tree Fizz Buzz   |[Code Challenge 18](401/tree-fizz-buzz/Read18.md)  |
 |Insertion Sort   |[Code Challenge 26](401/insertion-sort/Read26.md)  |
 |Merge Sort   |[Code Challenge 27](401/merge-sort/Read27.md)  |
+|Quick Sort   |[Code Challenge 28](401/quick-sort/Read28.md)  |
+
 
 
 

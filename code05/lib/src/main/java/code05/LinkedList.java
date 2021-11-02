@@ -28,6 +28,23 @@ public class LinkedList {
         }
     }
 
+    public void insert(String data) {
+
+
+            if (head == null) {
+                head = new LinkedListNode(data);
+
+            } else {
+                LinkedListNode newNode = new LinkedListNode(data);
+                newNode.setNext(head);
+                head = newNode;
+
+            }
+        }
+
+
+
+
     public Boolean included(String data) throws IOException {
         LinkedListNode current = head;
         while (current != null) {
@@ -89,7 +106,7 @@ public class LinkedList {
             System.out.println("list is empty");;
         }
         searchNode = head;
-        for (int i = 1; i < lengthOfList - value + 1; i++) {
+        for (int i = 0; i < lengthOfList - value; i++) {
             searchNode = searchNode.getNext();
         }
         System.out.println(value+"th node from the end is "+searchNode.getData());
@@ -119,7 +136,7 @@ public class LinkedList {
         return mergedList.toString();
     }
 
-    public LinkedList reverse(LinkedList linkedList2)
+    public LinkedList reverse(LinkedList linkedList)
     {
 
         LinkedListNode prev = null;
@@ -132,7 +149,7 @@ public class LinkedList {
             current = next;
         }
         head = prev;
-        return linkedList2;
+        return linkedList;
     }
 
 
