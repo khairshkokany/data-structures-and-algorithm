@@ -11,8 +11,9 @@ Arguments: key, value
 - Returns: Value associated with that key in the table
 3. contains
 
-Arguments: key
-Returns: Boolean, indicating if the key exists in the table already.
+- Arguments: key
+- Returns: Boolean, indicating if the key exists in the table already.
+
 4. hash
 
 - Arguments: key
