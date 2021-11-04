@@ -3,7 +3,7 @@
 
 1. addHash
 
-Arguments: key, value
+- Arguments: key, value
 - Returns: nothing
 - This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
 2. hashGet
