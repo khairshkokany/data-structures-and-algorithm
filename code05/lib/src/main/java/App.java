@@ -1,5 +1,6 @@
 //import Animal.Animal;
 import BinaryTrees.*;
+import HashPart.HashTable;
 import InsertionSort.QuickSort;
 import code05.LinkedList;
 
@@ -184,13 +185,13 @@ public class App {
 
       //  MergeSort mergeSort = new MergeSort();
        // InsertionSort insertionSort = new InsertionSort();
-
-        QuickSort quickSort = new QuickSort();
-
-        int[] arr = {8 , 4 , 23 , 42 , 16 , 15 };
-
-         QuickSort.quickSort(arr,0,arr.length-1);
-        System.out.println(Arrays.toString(QuickSort.quickSort(arr, 0, arr.length - 1)));
+//
+//        QuickSort quickSort = new QuickSort();
+//
+//        int[] arr = {8 , 4 , 23 , 42 , 16 , 15 };
+//
+//         QuickSort.quickSort(arr,0,arr.length-1);
+//        System.out.println(Arrays.toString(QuickSort.quickSort(arr, 0, arr.length - 1)));
 //        mergeSort.mergeSort(arr);
 
 //        System.out.println(Arrays.toString(arr));
@@ -227,6 +228,24 @@ public class App {
 //        System.out.println(linkedList1);
 
 
+        HashTable<String, Integer> hashTable = new HashTable<>();
+        hashTable.addHash("KHAIR", 300);
+        hashTable.addHash("ELDEEN", 400);
+        hashTable.addHash("ZAKARIA", 200);
+        hashTable.addHash("SHKOKANY", 100);
+        hashTable.addHash("MY", 600);
+        hashTable.addHash("MAJOR", 700);
+        hashTable.addHash("IS", 90000);
+        hashTable.addHash("MECHANICAL", 800);
+        hashTable.addHash("ENGINEER", 1000);
+        hashTable.addHash("THANK", 1500);
+        hashTable.addHash("YOU", 10000);
+
+        System.out.println(hashTable);
+        System.out.println("The size is => " + hashTable.getSize());
+        System.out.println("The KHAIR allowance is => " + hashTable.getHash("KHAIR"));
+        System.out.println("FIND KHAIR => " + hashTable.contains("KHAIR"));
+        System.out.println(hashTable.getBucketIndex("KHAIR"));
 
     }
 
