@@ -1,6 +1,7 @@
 //import Animal.Animal;
 import BinaryTrees.*;
 import HashPart.HashTable;
+import HashPart.Hashmap;
 import InsertionSort.QuickSort;
 import code05.LinkedList;
 
@@ -196,57 +197,70 @@ public class App {
 
 //        System.out.println(Arrays.toString(arr));
 //
-//        LinkedList linkedList = new LinkedList();
-//        LinkedList linkedList1 = new LinkedList();
-//        LinkedList linkedList2 = new LinkedList();
+        LinkedList linkedList = new LinkedList();
+        LinkedList linkedList1 = new LinkedList();
+        LinkedList linkedList2 = new LinkedList();
 //
-//        linkedList.add("k");
-//        linkedList.add("h");
-//        linkedList.add("a");
-//        linkedList.add("i");
-//        linkedList.add("r");
+        linkedList.add("k");
+        linkedList.add("h");
+        linkedList.add("a");
+        linkedList.add("i");
+        linkedList.add("r");
 //
-//        linkedList1.add("jamal");
-//        linkedList1.add("eldeeen");
-//        linkedList1.add("wari");
-//        linkedList1.add("heba");
-//        linkedList1.add("nawal");
-//
-//        linkedList.included("k");
-//        linkedList.included("z");
-//        linkedList.insertBefores("a" , "jamal");
+        linkedList1.add("jamal");
+        linkedList1.add("eldeeen");
+        linkedList1.add("wari");
+        linkedList1.add("heba");
+        linkedList1.add("nawal");
+
+
 //
 ////        System.out.println(linkedList);
 //
 //        linkedList.insertNthFromEnd(2);
 
 //
-//        System.out.println( linkedList2.zipLists(linkedList1 , linkedList));
+        System.out.println( (linkedList2.zipLists(linkedList1 , linkedList)));
 //        System.out.println(linkedList2.dataToString());
 //        System.out.println("we are here so you can go !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 //        System.out.println(linkedList1.reverse(linkedList1));
 //        System.out.println(linkedList1);
 
 
-        HashTable<String, Integer> hashTable = new HashTable<>();
-        hashTable.addHash("KHAIR", 300);
-        hashTable.addHash("ELDEEN", 400);
-        hashTable.addHash("ZAKARIA", 200);
-        hashTable.addHash("SHKOKANY", 100);
-        hashTable.addHash("MY", 600);
-        hashTable.addHash("MAJOR", 700);
-        hashTable.addHash("IS", 90000);
-        hashTable.addHash("MECHANICAL", 800);
-        hashTable.addHash("ENGINEER", 1000);
-        hashTable.addHash("THANK", 1500);
-        hashTable.addHash("YOU", 10000);
+//        HashTable<String, Integer> hashTable = new HashTable<>();
+//        hashTable.addHash("KHAIR", 300);
+//        hashTable.addHash("ELDEEN", 400);
+//        hashTable.addHash("ZAKARIA", 200);
+//        hashTable.addHash("SHKOKANY", 100);
+//        hashTable.addHash("MY", 600);
+//        hashTable.addHash("MAJOR", 700);
+//        hashTable.addHash("IS", 90000);
+//        hashTable.addHash("MECHANICAL", 800);
+//        hashTable.addHash("ENGINEER", 1000);
+//        hashTable.addHash("THANK", 1500);
+//        hashTable.addHash("YOU", 10000);
+//
+//        System.out.println(hashTable);
+//        System.out.println("The size is => " + hashTable.getSize());
+//        System.out.println("The KHAIR allowance is => " + hashTable.getHash("KHAIR"));
+//        System.out.println("FIND KHAIR => " + hashTable.contains("KHAIR"));
+//        System.out.println(hashTable.getBucketIndex("KHAIR"));
 
-        System.out.println(hashTable);
-        System.out.println("The size is => " + hashTable.getSize());
-        System.out.println("The KHAIR allowance is => " + hashTable.getHash("KHAIR"));
-        System.out.println("FIND KHAIR => " + hashTable.contains("KHAIR"));
-        System.out.println(hashTable.getBucketIndex("KHAIR"));
 
+
+//        LinkedList linkedList = new LinkedList();
+//        LinkedList linkedList1 = new LinkedList();
+//        LinkedList linkedList2 = new LinkedList();
+//        linkedList.add("khair");
+//        linkedList.add("eldeen");
+//        linkedList.add("shkokany");
+//        linkedList1.add("my");
+//        linkedList1.add("age");
+//        linkedList1.add("23");
+//
+//        System.out.println(linkedList2.zipLists(linkedList,linkedList1));
+
+        System.out.println(Hashmap.RepeatedWord("It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York..."));
     }
 
 

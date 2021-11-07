@@ -1,6 +1,7 @@
 package code05;
 
 import HashPart.HashTable;
+import HashPart.Hashmap;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -55,5 +56,11 @@ public class HashTest {
 
 
         assertEquals(1500,hashTable.getHash("THANK"));
+    }
+
+    @Test
+    public void testHashmap() {
+        String test = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
+        assertEquals("summer" ,Hashmap.RepeatedWord(test));
     }
 }
