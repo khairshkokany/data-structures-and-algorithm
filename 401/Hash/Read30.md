@@ -3,7 +3,7 @@
 
 1. addHash
 
-Arguments: key, value
+- Arguments: key, value
 - Returns: nothing
 - This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
 2. hashGet
@@ -11,12 +11,13 @@ Arguments: key, value
 - Returns: Value associated with that key in the table
 3. contains
 
-Arguments: key
-Returns: Boolean, indicating if the key exists in the table already.
+- Arguments: key
+- Returns: Boolean, indicating if the key exists in the table already.
+
 4. hash
 
-Arguments: key
-Returns: Index in the collection for that key
+- Arguments: key
+- Returns: Index in the collection for that key
 
 ## Approach & Efficiency
 For each method I took the approach that was most efficient:

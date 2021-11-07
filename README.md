@@ -20,7 +20,10 @@
 |Insertion Sort   |[Code Challenge 26](401/insertion-sort/Read26.md)  |
 |Merge Sort   |[Code Challenge 27](401/merge-sort/Read27.md)  |
 |Quick Sort   |[Code Challenge 28](401/quick-sort/Read28.md)  |
+|Hash Table   |[Code Challenge 30](401/Hash/Read30.md)  |[Code 30 HashTable](https://github.com/khairshkokany/data-structures-and-algorithm/tree/main/code05/lib/src/main/java/HashPart) |
 |HashMap   |[Code Challenge 31](401/hash-map/Read31.md)  |
+
+
 
 
 
