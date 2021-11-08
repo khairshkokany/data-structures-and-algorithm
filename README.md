@@ -21,6 +21,7 @@
 |Merge Sort   |[Code Challenge 27](401/merge-sort/Read27.md)  |
 |Quick Sort   |[Code Challenge 28](401/quick-sort/Read28.md)  |
 |HashMap   |[Code Challenge 31](401/hash-map/Read31.md)  |
+|Tree Intersection   |[Code Challenge 32](401/tree-intersection/Read32.md)  |
 
 
 

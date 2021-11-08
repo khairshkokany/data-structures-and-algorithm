@@ -2,6 +2,8 @@ package code05;
 
 import HashPart.HashTable;
 import HashPart.Hashmap;
+import HashPart.Node;
+import HashPart.TreeIntersectionHash;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -62,5 +64,38 @@ public class HashTest {
     public void testHashmap() {
         String test = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
         assertEquals("summer" ,Hashmap.RepeatedWord(test));
+    }
+
+    @Test
+    public void testTreeIns() {
+
+        Node Tree1 = new Node();
+        Tree1.root = new Node(150);
+        Tree1.root.left = new Node(100);
+        Tree1.root.left.left = new Node(75);
+        Tree1.root.left.right = new Node(160);
+        Tree1.root.left.right.left = new Node(125);
+        Tree1.root.left.right.right = new Node(175);
+        Tree1.root.right = new Node(250);
+        Tree1.root.right.left = new Node(200);
+        Tree1.root.right.right = new Node(350);
+        Tree1.root.right.right.left = new Node(300);
+        Tree1.root.right.right.right = new Node(500);
+
+        Node Tree2 = new Node();
+        Tree2.root = new Node(42);
+        Tree2.root.left = new Node(100);
+        Tree2.root.left.left = new Node(15);
+        Tree2.root.left.right = new Node(160);
+        Tree2.root.left.right.left = new Node(125);
+        Tree2.root.left.right.right = new Node(175);
+        Tree2.root.right = new Node(600);
+        Tree2.root.right.left = new Node(200);
+        Tree2.root.right.right = new Node(350);
+        Tree2.root.right.right.left = new Node(4);
+        Tree2.root.right.right.right = new Node(500);
+
+TreeIntersectionHash treeIntersectionHash = new TreeIntersectionHash();
+        assertEquals("[100, 160, 125, 175, 200, 350, 500]" , treeIntersectionHash.treeInsertion(Tree1 , Tree2).toString());
     }
 }

@@ -2,6 +2,9 @@
 import BinaryTrees.*;
 import HashPart.HashTable;
 import HashPart.Hashmap;
+import HashPart.Node;
+
+import HashPart.TreeIntersectionHash;
 import InsertionSort.QuickSort;
 import code05.LinkedList;
 
@@ -197,21 +200,21 @@ public class App {
 
 //        System.out.println(Arrays.toString(arr));
 //
-        LinkedList linkedList = new LinkedList();
-        LinkedList linkedList1 = new LinkedList();
-        LinkedList linkedList2 = new LinkedList();
-//
-        linkedList.add("k");
-        linkedList.add("h");
-        linkedList.add("a");
-        linkedList.add("i");
-        linkedList.add("r");
-//
-        linkedList1.add("jamal");
-        linkedList1.add("eldeeen");
-        linkedList1.add("wari");
-        linkedList1.add("heba");
-        linkedList1.add("nawal");
+//        LinkedList linkedList = new LinkedList();
+//        LinkedList linkedList1 = new LinkedList();
+//        LinkedList linkedList2 = new LinkedList();
+////
+//        linkedList.add("k");
+//        linkedList.add("h");
+//        linkedList.add("a");
+//        linkedList.add("i");
+//        linkedList.add("r");
+////
+//        linkedList1.add("jamal");
+//        linkedList1.add("eldeeen");
+//        linkedList1.add("wari");
+//        linkedList1.add("heba");
+//        linkedList1.add("nawal");
 
 
 //
@@ -220,7 +223,7 @@ public class App {
 //        linkedList.insertNthFromEnd(2);
 
 //
-        System.out.println( (linkedList2.zipLists(linkedList1 , linkedList)));
+//        System.out.println( (linkedList2.zipLists(linkedList1 , linkedList)));
 //        System.out.println(linkedList2.dataToString());
 //        System.out.println("we are here so you can go !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 //        System.out.println(linkedList1.reverse(linkedList1));
@@ -260,8 +263,45 @@ public class App {
 //
 //        System.out.println(linkedList2.zipLists(linkedList,linkedList1));
 
-        System.out.println(Hashmap.RepeatedWord("It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York..."));
+//        System.out.println(Hashmap.RepeatedWord("It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York..."));
+
+
+        Node Tree1 = new Node();
+        Tree1.root = new Node(150);
+        Tree1.root.left = new Node(100);
+        Tree1.root.left.left = new Node(75);
+        Tree1.root.left.right = new Node(160);
+        Tree1.root.left.right.left = new Node(125);
+        Tree1.root.left.right.right = new Node(175);
+        Tree1.root.right = new Node(250);
+        Tree1.root.right.left = new Node(200);
+        Tree1.root.right.right = new Node(350);
+        Tree1.root.right.right.left = new Node(300);
+        Tree1.root.right.right.right = new Node(500);
+
+        Node Tree2 = new Node();
+        Tree2.root = new Node(42);
+        Tree2.root.left = new Node(100);
+        Tree2.root.left.left = new Node(15);
+        Tree2.root.left.right = new Node(160);
+        Tree2.root.left.right.left = new Node(125);
+        Tree2.root.left.right.right = new Node(175);
+        Tree2.root.right = new Node(600);
+        Tree2.root.right.left = new Node(200);
+        Tree2.root.right.right = new Node(350);
+        Tree2.root.right.right.left = new Node(4);
+        Tree2.root.right.right.right = new Node(500);
+
+
+        TreeIntersectionHash treeIntersectionHash = new TreeIntersectionHash();
+        System.out.println(treeIntersectionHash.treeInsertion(Tree1, Tree2));
+
+
+
+
     }
+
+
 
 
 

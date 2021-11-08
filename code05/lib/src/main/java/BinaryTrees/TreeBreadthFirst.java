@@ -39,7 +39,7 @@ public class TreeBreadthFirst {
         if (root == null)
             return;
         if (level == 1)
-            System.out.print(root.getData() + " ");
+            System.out.print(root.value() + " ");
         else if (level > 1) {
             printCurrentLevel(root.getLeftNode(), level - 1);
             printCurrentLevel(root.getRightNode(), level - 1);
