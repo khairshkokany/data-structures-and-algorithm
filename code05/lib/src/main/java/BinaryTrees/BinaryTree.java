@@ -4,6 +4,7 @@ public class BinaryTree <T extends Comparable <T>> {
 
     public BinaryTreesNode<T> root;
 
+
     public void add(T data){
         if (isEmpty()){
             root = new BinaryTreesNode<>(data);
@@ -14,13 +15,13 @@ public class BinaryTree <T extends Comparable <T>> {
 
     private void addPrivate(T data , BinaryTreesNode<T> root) {
         BinaryTreesNode<T> binaryTreesNode = new BinaryTreesNode<>(data);
-        if (data.compareTo(root.getData()) < 0) {
+        if (data.compareTo(root.value()) < 0) {
             if (root.getLeftNode() == null ) {
                 root.setLeftNode(binaryTreesNode);
             }else {
                 addPrivate(data , root.getLeftNode());
             }
-        }else if (data.compareTo(root.getData()) > 0 ) {
+        }else if (data.compareTo(root.value()) > 0 ) {
             if (root.getRightNode() == null) {
                 root.setRightNode(binaryTreesNode);
             }else {
@@ -37,9 +38,9 @@ public class BinaryTree <T extends Comparable <T>> {
         if (root == null) {
                 return false;
                                  }
-    if (data.compareTo(root.getData()) < 0){
+    if (data.compareTo(root.value()) < 0){
         return containsPrivate(data,root.getLeftNode());
-    }else if (data.compareTo(root.getData()) > 0) {
+    }else if (data.compareTo(root.value()) > 0) {
         return containsPrivate(data,root.getRightNode());
     }else {
 
@@ -54,8 +55,8 @@ public class BinaryTree <T extends Comparable <T>> {
         int sum = 0;
         if(node != null)
         {
-            if(((Integer) node.getData() % 2) != 0)
-                sum += (Integer) node.getData();
+            if(((Integer) node.value() % 2) != 0)
+                sum += (Integer) node.value();
             sum+=sumOdd(node.getLeftNode());
             sum+=sumOdd(node.getRightNode());
         }
@@ -74,9 +75,11 @@ public class BinaryTree <T extends Comparable <T>> {
         if (node.getRightNode() != null) {
             return maximumValue(node.getRightNode());
         }
-        return (int) node.getData();
+        return (int) node.value();
 
     }
+
+
 
 
     public boolean isEmpty() {

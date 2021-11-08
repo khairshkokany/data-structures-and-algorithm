@@ -6,11 +6,12 @@ public class BinaryTreesNode <T> {
     public BinaryTreesNode<T> leftNode;
     public BinaryTreesNode<T> rightNode;
 
+
     public BinaryTreesNode(T data) {
         this.data = data;
     }
 
-    public T getData() {
+    public T value() {
         return data;
     }
 
