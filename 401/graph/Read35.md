@@ -20,4 +20,4 @@ For each method I took the approach that was most efficient:
 
 
 ## Solution Code :-
-[code35]()
+[code35](https://github.com/khairshkokany/data-structures-and-algorithm/tree/main/code05/lib/src/test/java/code05)
