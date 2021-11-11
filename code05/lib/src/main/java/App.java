@@ -1,10 +1,8 @@
 //import Animal.Animal;
 import BinaryTrees.*;
-import HashPart.HashTable;
-import HashPart.Hashmap;
-import HashPart.Node;
+import Graph.Graph;
+import HashPart.*;
 
-import HashPart.TreeIntersectionHash;
 import InsertionSort.QuickSort;
 import code05.LinkedList;
 
@@ -21,6 +19,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Queue;
 
+import static HashPart.UniqueChar.uniqueCharacters;
+
 
 public class App {
     public static void main(String[] args) throws Exception
@@ -28,9 +28,9 @@ public class App {
 //        System.out.println("hello from package");
 //        LinkedList linkedList1 = new LinkedList();
 //    LinkedList linkedList = new LinkedList();
-//    LinkedList linkedList1 = new LinkedList();
-//    LinkedList linkedList2 = new LinkedList();
-//    LinkedList linkedList3 = new LinkedList();
+    LinkedList linkedList1 = new LinkedList();
+    LinkedList linkedList2 = new LinkedList();
+    LinkedList linkedList3 = new LinkedList();
 //
 //        linkedList.add("K");
 //        linkedList.add("H");
@@ -38,11 +38,11 @@ public class App {
 //        linkedList.add("I");
 //        linkedList.add("R");
 //
-//        linkedList1.add("K");
-//        linkedList1.add("H");
-//        linkedList1.add("A");
-//        linkedList1.add("I");
-//        linkedList1.add("R");
+        linkedList1.add("K");
+        linkedList1.add("H");
+        linkedList1.add("A");
+        linkedList1.add("I");
+        linkedList1.add("R");
 //
 //
 //        System.out.println(linkedList1);
@@ -50,11 +50,11 @@ public class App {
 //        System.out.println();
 
 //
-//        linkedList2.add("K");
-//        linkedList2.add("H");
-//        linkedList2.add("A");
-//        linkedList2.add("I");
-//        linkedList2.add("R");
+        linkedList2.add("K");
+        linkedList2.add("H");
+        linkedList2.add("A");
+        linkedList2.add("I");
+        linkedList2.add("R");
 //
 
 
@@ -66,10 +66,11 @@ public class App {
 //        linkedList.printList();
 //        System.out.println();
 //        System.out.println("+++++++++++++++++++++++++++++++++ zip method ++++++++++++++++");
-//        System.out.println(linkedList3.zipLists(linkedList,linkedList1));
-//        linkedList3.zipLists(linkedList,linkedList1);
+        System.out.println(linkedList3.zipLists(linkedList1,linkedList2));
+        linkedList3.zipLists(linkedList1,linkedList2);
 //
-//linkedList.reverse(linkedList);
+        linkedList2.reverse(linkedList2);
+        System.out.println(linkedList2);
 //System.out.println(linkedList.included("R"));
 
 
@@ -216,13 +217,13 @@ public class App {
 //        linkedList1.add("wari");
 //        linkedList1.add("heba");
 //        linkedList1.add("nawal");
-
-
+//
+//
 //
 ////        System.out.println(linkedList);
 //
 //        linkedList.insertNthFromEnd(2);
-
+//
 //
 //        System.out.println( (linkedList2.zipLists(linkedList1 , linkedList)));
 //        System.out.println(linkedList2.dataToString());
@@ -297,24 +298,63 @@ public class App {
 //        TreeIntersectionHash treeIntersectionHash = new TreeIntersectionHash();
 //        System.out.println(treeIntersectionHash.treeInsertion(Tree1, Tree2));
 
-        HashMap hashMap1 = new HashMap();
-        hashMap1.put("fond", "enamored");
-        hashMap1.put("wrath", "anger");
-        hashMap1.put("diligent", "employed");
-        hashMap1.put("outfit", "garb");
-        hashMap1.put("guide", "usher");
+//        HashMap hashMap1 = new HashMap();
+//        hashMap1.put("fond", "enamored");
+//        hashMap1.put("wrath", "anger");
+//        hashMap1.put("diligent", "employed");
+//        hashMap1.put("outfit", "garb");
+//        hashMap1.put("guide", "usher");
+//
+//        HashMap hashMap2 = new HashMap();
+//
+//        hashMap2.put("fond", "averse");
+//        hashMap2.put("wrath", "delight");
+//        hashMap2.put("diligent", "idle");
+//        hashMap2.put("guide", "follow");
+//        hashMap2.put("flow", "jam");
+//
+//
+//        System.out.println(Hashmap.leftJoin(hashMap1 , hashMap2));
 
-        HashMap hashMap2 = new HashMap();
+//
+//            String str = "I love cats";
+//            String string = str.replace(" ", "").toLowerCase();
+//            if (uniqueCharacters(string))
+//            {
+//                System.out.print("true");
+//            }
+//            else
+//            {
+//                System.out.print("False");
+//            }
+//
 
-        hashMap2.put("fond", "averse");
-        hashMap2.put("wrath", "delight");
-        hashMap2.put("diligent", "idle");
-        hashMap2.put("guide", "follow");
-        hashMap2.put("flow", "jam");
+
+            // ---------------------- graph -------------------------
+        Graph graph = new Graph();
 
 
-        System.out.println(Hashmap.leftJoin(hashMap1 , hashMap2));
 
+
+        graph.addNode("Khair");
+        graph.addNode("Eldeen");
+        graph.addNode("Shkokany");
+
+        graph.addEdge("Shkokany", "Khair");
+        graph.addEdge("Shkokany", "Eldeen");
+        graph.addEdge("Shkokany", "Shkokany");
+        graph.addEdge("Khair", "Eldeen");
+
+        System.out.println("Nodes are: "+graph.getNodes());
+        System.out.println("Neighbors are: "+graph.getNeighbors("Khair"));
+        System.out.println("Size "+ graph.size());
+
+    }
+
+
+
+//        System.out.println(UniqueChar.uniqueCharacters(""));
+//        System.out.println(UniqueChar.uniqueCharacters("Donald the duck"));
 
 
     }
@@ -323,5 +363,5 @@ public class App {
 
 
 
-}
+
 
