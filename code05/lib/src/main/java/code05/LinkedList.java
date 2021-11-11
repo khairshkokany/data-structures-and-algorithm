@@ -49,6 +49,7 @@ public class LinkedList {
         LinkedListNode current = head;
         while (current != null) {
             if (current.getData().equals(data)) {
+
                 return true;
             } else {
 
@@ -151,6 +152,8 @@ public class LinkedList {
         head = prev;
         return linkedList;
     }
+
+
 
 
 
