@@ -25,6 +25,8 @@
 |Tree Intersection   |[Code Challenge 32](401/tree-intersection/Read32.md)  |
 |Hashmap Left Join   |[Code Challenge 33](401/hashmap-left-join/Read33.md)  |
 |Graph  |[Code Challenge 35](401/graph/Read35.md)  |
+|Graph Breadth First  |[Code Challenge 36](401/graph-breadth-first/Read36.md)  |
+|Graph Business Trip  |[Code Challenge 37](401/graph-business-trip/Read37.md)  |
 
 
 
