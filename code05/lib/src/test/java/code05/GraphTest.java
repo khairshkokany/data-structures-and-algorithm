@@ -36,4 +36,46 @@ public class GraphTest {
         assertEquals(0,graph.size());
 
     }
+    @Test
+    public void breadthFirstSearch () {
+        Graph graph = new Graph();
+        graph.addNode("Name");
+        graph.addNode("Khair");
+        graph.addNode("Eldeen");
+        graph.addNode("Shkokany");
+        graph.addNode(":')");
+        graph.addNode("Hate");
+        graph.addNode("Everything");
+
+
+        graph.addEdge("Name", "Khair");
+        graph.addEdge("Name", "Eldeen");
+        graph.addEdge("Name", "Shkokany");
+        graph.addEdge("Khair", "Hate");
+        graph.addEdge("Hate", "Everything");
+        graph.addEdge("Hate", ":')");
+
+        assertEquals("[Name, Khair, Eldeen, Shkokany, Hate, Everything, :')]" ,graph.breadthFirstSearch("Name").toString());
+    }
+    @Test
+    public void bustTest() {
+        Graph graphs = new Graph();
+        graphs.addNode("Name");
+        graphs.addNode("Khair");
+        graphs.addNode("Eldeen");
+        graphs.addNode("Shkokany");
+        graphs.addNode(":')");
+        graphs.addNode("Hate");
+        graphs.addNode("Everything");
+
+        graphs.addEdges("Name", "Khair",45);
+        graphs.addEdges("Name", "Eldeen",20);
+        graphs.addEdges("Name", "Shkokany",60);
+        graphs.addEdges("Khair", "Hate",70);
+        graphs.addEdges("Hate", "Everything",90);
+        graphs.addEdges("Hate", ":')",100);
+        String[] test1 = {"Name" , "Khair"};
+        assertEquals("True,$45" , graphs.bust(test1));
+    }
+
 }

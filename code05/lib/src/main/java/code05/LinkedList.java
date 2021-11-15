@@ -157,9 +157,6 @@ public class LinkedList {
 
 
 
-
-
-
     public void printList(){
         if (head == null){
             System.out.print("list is []");
