@@ -332,23 +332,59 @@ public class App {
 
             // ---------------------- graph -------------------------
         Graph graph = new Graph();
+        Graph graphs = new Graph();
 
 
 
 
+        graphs.addNode("Name");
+        graphs.addNode("Khair");
+        graphs.addNode("Eldeen");
+        graphs.addNode("Shkokany");
+        graphs.addNode(":')");
+        graphs.addNode("Hate");
+        graphs.addNode("Everything");
+
+
+        graph.addNode("Name");
         graph.addNode("Khair");
         graph.addNode("Eldeen");
         graph.addNode("Shkokany");
+        graph.addNode(":')");
+        graph.addNode("Hate");
+        graph.addNode("Everything");
 
-        graph.addEdge("Shkokany", "Khair");
-        graph.addEdge("Shkokany", "Eldeen");
-        graph.addEdge("Shkokany", "Shkokany");
-        graph.addEdge("Khair", "Eldeen");
+
+        graph.addEdge("Name", "Khair");
+        graph.addEdge("Name", "Eldeen");
+        graph.addEdge("Name", "Shkokany");
+        graph.addEdge("Khair", "Hate");
+        graph.addEdge("Hate", "Everything");
+        graph.addEdge("Hate", ":')");
+
+        graphs.addEdges("Name", "Khair",45);
+        graphs.addEdges("Name", "Eldeen",20);
+        graphs.addEdges("Name", "Shkokany",60);
+        graphs.addEdges("Khair", "Hate",70);
+        graphs.addEdges("Hate", "Everything",90);
+        graphs.addEdges("Hate", ":')",100);
+
+        String[] test1 = {"Name" , "Khair"};
+        String[] test2 = {"Name" , "Eldeen"};
+        String[] test3 = {"Shkokany" , "Name"};
+        String[] test4 = {"Name" , "Hate"};
+        String[] test5 = {"Hate" , "Everything"};
 
         System.out.println("Nodes are: "+graph.getNodes());
         System.out.println("Neighbors are: "+graph.getNeighbors("Khair"));
         System.out.println("Size "+ graph.size());
-
+        System.out.println("Size "+ graph.size());
+        System.out.println("Breadth-First-Search "+ graph.breadthFirstSearch("Name"));
+        System.out.println("BUST1 "+ graphs.bust(test1));
+        System.out.println("BUST2 "+ graphs.bust(test2));
+        System.out.println("BUST3 "+ graphs.bust(test3));
+        System.out.println("BUST4 "+ graphs.bust(test4));
+        System.out.println("BUST5 "+ graphs.bust(test5));
     }
 
 
