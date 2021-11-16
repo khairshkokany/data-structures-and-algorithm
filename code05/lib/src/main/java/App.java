@@ -3,7 +3,7 @@ import BinaryTrees.*;
 import Graph.Graph;
 import HashPart.*;
 
-import InsertionSort.QuickSort;
+//import InsertionSort.QuickSort;
 import code05.LinkedList;
 
 //import Queue.PsudoCode;
@@ -19,7 +19,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Queue;
 
-import static HashPart.UniqueChar.uniqueCharacters;
+//import static HashPart.UniqueChar.uniqueCharacters;
 
 
 public class App {
@@ -344,6 +344,8 @@ public class App {
         graphs.addNode(":')");
         graphs.addNode("Hate");
         graphs.addNode("Everything");
+        graphs.addNode("love");
+        graphs.addNode("code");
 
 
         graph.addNode("Name");
@@ -353,14 +355,16 @@ public class App {
         graph.addNode(":')");
         graph.addNode("Hate");
         graph.addNode("Everything");
+        graph.addNode("love");
+        graph.addNode("code");
 
 
         graph.addEdge("Name", "Khair");
         graph.addEdge("Name", "Eldeen");
         graph.addEdge("Name", "Shkokany");
-        graph.addEdge("Khair", "Hate");
-        graph.addEdge("Hate", "Everything");
-        graph.addEdge("Hate", ":')");
+        graph.addEdge("Khair", "love");
+        graph.addEdge("love", "code");
+//        graph.addEdge("Hate", ":')");
 
         graphs.addEdges("Name", "Khair",45);
         graphs.addEdges("Name", "Eldeen",20);
@@ -380,6 +384,7 @@ public class App {
         System.out.println("Size "+ graph.size());
         System.out.println("Size "+ graph.size());
         System.out.println("Breadth-First-Search "+ graph.breadthFirstSearch("Name"));
+        System.out.println("Depth-First-Search "+ graph.depthFirstSearch("Name"));
         System.out.println("BUST1 "+ graphs.bust(test1));
         System.out.println("BUST2 "+ graphs.bust(test2));
         System.out.println("BUST3 "+ graphs.bust(test3));

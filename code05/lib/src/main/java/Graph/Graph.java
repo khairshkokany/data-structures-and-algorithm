@@ -72,6 +72,28 @@ public class Graph {
         return "True"+",$" + cost ;
     }
 
+    public List<String> depthFirstSearch(String vertex) {
+        List <String> visited = new ArrayList<>();
+        Stack <String> stack = new Stack<>();
+
+        stack.push(vertex);
+
+        while (!stack.isEmpty()) {
+            String string = stack.pop();
+            if (!visited.contains(string)){
+                visited.add(string);
+                for (Vertices vertices : getNeighbors(string)) {
+                    stack.push(vertices.data);
+                }
+            }
+
+        }
+        return visited;
+    }
+
+
+
+
 
 
 

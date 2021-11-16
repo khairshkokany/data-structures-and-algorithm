@@ -78,4 +78,27 @@ public class GraphTest {
         assertEquals("True,$45" , graphs.bust(test1));
     }
 
+    @Test
+    public void graphDepth() {
+        Graph graph = new Graph();
+        graph.addNode("Name");
+        graph.addNode("Khair");
+        graph.addNode("Eldeen");
+        graph.addNode("Shkokany");
+        graph.addNode(":')");
+        graph.addNode("Hate");
+        graph.addNode("Everything");
+        graph.addNode("love");
+        graph.addNode("code");
+
+
+        graph.addEdge("Name", "Khair");
+        graph.addEdge("Name", "Eldeen");
+        graph.addEdge("Name", "Shkokany");
+        graph.addEdge("Khair", "love");
+        graph.addEdge("love", "code");
+
+        assertEquals("[Name, Shkokany, Eldeen, Khair, love, code]" ,graph.depthFirstSearch("Name").toString());
+    }
+
 }
